@@ -1,0 +1,202 @@
+﻿
+
+/*Diseases page style start*/
+.disase {
+    margin: 80px;
+}
+
+
+
+/*AboutUs page style start*/
+.aboutUs {
+    background-color: #f8f8f8;
+    margin: 80px;
+}
+
+.about-heading h1 {
+    color: #ff0000;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333
+}
+
+.about-container { /*Container er element alignment a kaj korbe,division gula k perfectly rakhbe*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.about-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+    .about-content p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        color: #666;
+    }
+
+    .about-content button {
+        display: inline-block;
+        background-color: #ff4500;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+        .about-content button:hover {
+            background-color: #ff6347;
+            transform: scale(1.1);
+        }
+
+.about-image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.abut-mail {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+    margin: 0px 25px;
+}
+
+.about-mail p {
+    color: #ff4500;
+    font-size: 20px;
+    margin: 0px 25px;
+    margin-left: 65px;
+}
+
+.about-mail a {
+    color: blue;
+    text-decoration: none; /* Remove the default underline */
+    transition: color 0.3s; /* Add a transition for a smooth color change effect (optional) */
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    margin-left: 65px;
+}
+
+    .about-mail a:hover {
+        color: red;
+    }
+
+@media screen and (max-width:768px) {
+    .about-heading h1 {
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    .aboutUs {
+        margin: 0px;
+    }
+
+    .about-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+
+    .about-content {
+        width: 100%;
+        margin: 35px 0px;
+    }
+
+        .about-content h2 {
+            font-size: 30px;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .about-content button {
+            font-size: 16px;
+            padding: 8px 16px;
+        }
+
+    .about-image {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*Diseases page style*/
+.disase {
+    animation: fadeInUp 2s ease;
+}
+
+.homeimg {
+    animation: fadeInUp 2s ease;
+}
+
+.diseasesImg {
+    animation: fadeInUp 2s ease;
+}
+
+
+/* Making responsive of Navigation Item*/
+
+/* Hover effect only on text */
+.nav-item .nav-link:hover {
+    background-color: #ff6a008c
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
